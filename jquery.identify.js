@@ -1,10 +1,17 @@
-// identify: return either the object's current id or assigns a unique id to the object and returns that
-//           works the same as the prototypejs method of the same name.
-//
-//  Usage: 
-//    $(".things").each(function () {
-//        console.log($(this).identify());
-//    });
+/*
+* identify
+* 
+* Return either the object's current id or assigns a unique id to the object and returns that
+* works the same as the prototypejs method of the same name.
+*
+*  Usage: 
+*    $(".things").each(function () {
+*        console.log($(this).identify());
+*    });
+*
+* Released under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
 
 (function ($) {
     $.fn.identify = function () {

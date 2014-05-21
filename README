@@ -1,0 +1,8 @@
+identify
+
+Return either the object's current id or assigns a unique id to the object and returns that
+works the same as the prototypejs method of the same name.
+
+Documentation and licence in js header.
+
+sample.htm will show usage.

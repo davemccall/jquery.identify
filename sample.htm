@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" href="sample.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery.identify.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".element").hover(function () {
+				var id = $(this).identify();
+				$("#element-id").html(id);
+			}, function () {
+				$("#element-id").html("");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+
+		<p>Mouse over each element to see the identify value</p>
+	
+		<div id="element1" class="element">This element had an explicitly declared id of "element1"</div>
+		<div id="element2" class="element">This element had an explicitly declared id of "element2"</div>
+		<div class="element">This element had no explicitly declared id</div>
+		<div class="element">This element had no explicitly declared id</div>
+		<div class="element">This element had no explicitly declared id</div>
+		<br />
+		<div>Element ID: <span id="element-id"></span></div>
+
+	</div>
+
+	</body>
+</html>
